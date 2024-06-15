@@ -1,0 +1,220 @@
+.jobcard {
+	border-radius: 1rem;
+	overflow: hidden;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap:0;
+	align-items: center;
+	height: 375px;
+	height: calc(var(--tg-viewport-height) - 150px);
+	width: 350px;
+	opacity: 1;
+	z-index: 20;
+	align-self: flex-start;
+    background-color: var(--tg-theme-bg-color);
+	cursor: grab;
+	transition: all 800ms ease-in-out;
+}
+
+
+
+.jobcard > * {
+	pointer-events: none;
+}
+
+ [draggable=true] {
+	cursor: grabbing;
+  }
+
+  .jobcard:last-child {
+	margin-top: 1rem;
+}
+
+.container {
+	position: relative;
+	user-select: none;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 350px;
+	width: 100%;
+}
+
+.jobcard img {
+	position: relative;
+	top: -3%;
+	width: 200px;
+}
+
+.header {
+	padding: 0 1rem ;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	justify-content: center;
+	text-align: left;
+}
+
+.h::after {
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	clip-path: circle(50% at 50% 50%);
+	background-color: var(--blue-300);
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap:0;
+	align-items: flex-start;
+}
+
+.header span {
+	font-size: 1.5rem;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--primary-blue);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+
+.listTitle {
+	overflow: hidden;
+	text-wrap: nowrap;
+	text-overflow: ellipsis;
+	font-size: 1rem;
+	width: 200px;
+	display: block;
+	text-align: left;
+}
+
+.title h3 {
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	animation: title 20s linear infinite;
+}
+
+.body {
+	color: var(--tg-text-color);
+	padding: 1rem;
+	border: 1px solid var(--blue-100);
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1rem;
+	min-width: 100%;
+}
+
+.body .col {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	justify-content: space-between;
+	color: var(--tg-text-color);
+}
+
+.col strong {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 150px;
+	text-wrap: nowrap;
+}
+
+.body strong {
+	font-weight: 800;
+	color: var(--tg-text-color);
+}
+
+.text {
+	text-align: right;
+	color: var(--dark-text-100);
+}
+
+.text svg {
+	vertical-align: middle;
+}
+
+.ball {
+	flex: none;
+	height: 2.5rem;
+	width: 2.5rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	background-color: var(--blue);
+}
+
+.actions {
+	position: absolute;
+	z-index: 900;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	padding: 1rem 0 0.5rem;
+}
+
+
+
+.company {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+
+.moving.jobcard {
+	transition: none;
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.countryBall svg {
+	width: 24px;
+	height: 24px;
+}
+
+.company .text {
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right;
+}
+
+article:last-child {
+	pointer-events: none;
+}
+
+@keyframes title {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+

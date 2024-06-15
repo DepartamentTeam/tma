@@ -1,0 +1,63 @@
+.container {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.container button {
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  background-color: var(--tg-theme-section-bg-color);
+}
+
+.resume {
+  display: grid;
+  place-content: center;
+  padding: 0.7rem;
+  border-radius: 8px;
+  background-color: var(--tg-theme-accent-text-color);
+}
+
+.label {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.label label {
+  height: 100%;
+}
+
+.label span  {
+  margin-top: 1rem;
+  padding: 0 !important;
+  display: flex;
+  
+  flex-direction: column;
+}
+
+.container input[type="file"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.container svg {
+  fill: var(--tg-theme-button-text-color);
+}
+
+.noCv {
+  border: 1px solid var(--red-300);
+}
+
+.Cv {
+  border-radius: var(--green-300);
+}

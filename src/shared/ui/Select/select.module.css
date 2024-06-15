@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	position: relative;
+}
+
+.container label {
+	margin-left: 1rem;
+}
+
+.open {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.select {
+	border: 1px solid var(--primary-blue);
+	border-radius: 1rem;
+	background-color: transparent;
+	padding: 0.5rem 1.25rem;
+	text-align: left;
+	position: relative;
+}
+
+.select svg {
+	position: absolute;
+	right: 5%;
+}
+
+.menu {
+	position: absolute;
+	background-color: var(--white);
+	top: 100%;
+	width: 100%;
+	z-index: 60;
+}
+
+.option {
+	padding: 1rem;
+	width: 100%;
+	background-color: var(--white);
+}
+
+.option:hover {
+	background-color: var(--blue-100);
+}

@@ -1,0 +1,60 @@
+.btn {
+  flex: none;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5rem;
+  color: var(--tg-theme-text-color);
+  background-color: var(--tg-theme-bg-color);
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn:active {
+  transform: scale(1.01);
+}
+
+.btn:has(svg) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.secondary {
+  background-color: #f5f5f5;
+}
+
+.primary {
+  color: var(--tg-theme-button-text-color);
+  background-color: var(--tg-theme-button-color);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.premium {
+   background: linear-gradient(
+    117deg,
+    rgba(255, 244, 226, 1) 0%,
+    rgba(255, 198, 120, 1) 18%,
+    rgba(255, 161, 74, 1) 70%
+  );
+  border: 1px solid  rgba(255, 198, 120, 1) ;
+  color: var(--dark-100);
+  font-weight: 600;
+}
+
+.icon svg {
+  stroke: var(--tg-theme-accent-text-color);
+}

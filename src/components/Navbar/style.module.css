@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.me {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-self: flex-start;
+    align-self: center;
+    text-wrap: nowrap;
+}
+

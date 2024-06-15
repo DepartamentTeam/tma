@@ -1,0 +1,42 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow-y: auto;
+}
+
+.switch button {
+    flex: 2;
+}
+
+.switch {
+    width: 100%;
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .switch span {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 2rem;
+    background-color: var(--tg-theme-section-bg-color);
+ }
+
+
+ .active {
+     background-color: transparent; 
+ }
+ 
+ .switch svg {
+     width: 28px;
+     height: 28px;
+ }
+
+ .btn svg  {
+    stroke: none;
+ }

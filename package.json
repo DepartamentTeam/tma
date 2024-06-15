@@ -1,0 +1,37 @@
+{
+  "name": "mini-app-solid",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@nanostores/solid": "^0.4.2",
+    "@solid-primitives/i18n": "^2.1.1",
+    "@solidjs/router": "^0.13.3",
+    "@tma.js/sdk-solid": "latest",
+    "@tma.js/solid-router-integration": "latest",
+    "@tonconnect/ui": "^2.0.0",
+    "eruda": "^3.0.1",
+    "hammerjs": "^2.0.8",
+    "nanoid": "^5.0.7",
+    "nanostores": "^0.10.3",
+    "solid-js": "^1.8.15",
+    "ton-core": "^0.53.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining-assign": "^7.24.7",
+    "@faker-js/faker": "^8.4.1",
+    "@types/jest": "^29.5.12",
+    "fs": "0.0.1-security",
+    "jsdom": "^24.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-solid": "^2.10.2",
+    "vitest": "^1.6.0"
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+    flex: none;
+    height: 3.5rem; 
+    width: 3.5rem; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: var(--tg-theme-bg-color);
+    align-self: center;
+}
+
+
+.lg {
+    height: 5rem;
+    width: 5rem;
+    font-size: 1rem;
+}

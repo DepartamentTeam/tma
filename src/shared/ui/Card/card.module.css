@@ -1,0 +1,106 @@
+.card {
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+	flex: none;
+	background-color: var(--bg-surface-100);
+	height: 100%;
+}
+
+.bg svg {
+	position: absolute;
+	bottom: -12%;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+.title {
+	color: var(--white);
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.purple {
+	background-color: var(--purple-300);
+}
+
+.purple svg {
+	fill: var(--purple-200);
+}
+
+.blue {
+	background-color: var(--primary-blue);
+}
+
+.blue svg {
+	fill: var(--blue-300);
+}
+
+.orange {
+	background-color: var(--orange-400);
+}
+
+.orange svg {
+	fill: var(--orange-200);
+}
+
+.green {
+	background-color: var(--green-400);
+}
+
+.green svg {
+	fill: var(--green-200);
+}
+
+.light_blue {
+	background-color: var(--blue-200);
+}
+
+.light_blue + .title {
+	color: var(--primary-blue);
+}
+
+.body {
+	
+	border-radius: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.938rem;
+}
+
+.body span {
+	text-wrap: nowrap;
+}
+
+.body div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.icon {
+	width: 32px;
+}
+
+.container svg {
+	align-self: center;
+}

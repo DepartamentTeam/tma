@@ -1,0 +1,17 @@
+.header {
+
+}
+
+.description {
+    text-align: left;
+    background: var(--tg-bg-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.description a {
+    text-wrap: nowrap;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,95 @@
+.item {
+	padding: 0;
+	display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--tg-theme-hint-color);
+}
+
+.container {
+	flex-direction: row;
+	padding: 0.5rem;
+	overflow: hidden;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+.container span {
+	position: relative;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header {
+	width: 180px;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+}
+
+.salary {
+	text-wrap: nowrap;
+}
+
+.subtitle {
+	color: var(--tg-theme-hint-color);
+}
+
+.item:hover {
+	filter: brightness(0.8);
+}
+
+.item:visited {
+	filter: saturate(0.9);
+	color: black;
+}
+
+.item:visited  .new {
+	display: none !important;
+}
+
+.item:visited > .new {
+	display: none !important;
+}
+
+.card:hover {
+	filter: brightness(0.9);
+}
+
+.listTitle {
+	overflow: hidden;
+	text-wrap: nowrap;
+	text-overflow: ellipsis;
+	font-size: 1rem;
+	width: 100%;
+	display: block;
+	font-weight: 600;
+}
+
+.ball {
+	position: relative;
+	flex: none;
+	height: 2.5rem;
+	width: 2.5rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	background-color: var(--tg-theme-bg-color);
+}
+
+ .new {
+	display: block;
+	position: absolute;
+	top: 10%;
+	right: 0%;
+	width: 0.6rem;
+	height: 0.6rem;
+	clip-path: circle(50% at 50% 50%);
+	background-color: var(--blue-300);
+	content: url('data:image/svg+xml; utf8, <svg width="20" height="19" viewBox="0 0 20 19" fill="#ffcd80" xmlns="http://www.w3.org/2000/svg"><path d="M8.60774 0.966417C9.1116 -0.288287 10.8878 -0.288284 11.3917 0.96642L13.2325 5.55055L18.1611 5.88474C19.5101 5.97621 20.059 7.66548 19.0214 8.5324L15.2305 11.6997L16.4357 16.4904C16.7656 17.8016 15.3286 18.8457 14.1835 18.1268L9.9997 15.5001L5.81592 18.1268C4.6708 18.8457 3.23382 17.8016 3.56369 16.4904L4.76889 11.6997L0.977973 8.5324C-0.0596216 7.66548 0.48926 5.97621 1.83825 5.88474L6.76688 5.55055L8.60774 0.966417Z"/></svg>');
+}

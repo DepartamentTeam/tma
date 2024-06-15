@@ -1,0 +1,46 @@
+.controls {
+	display: flex;
+	background-color: var(--gray-300);
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.control {
+	position: relative;
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+.active {
+	border: 1px solid var(--primary-blue);
+	background-color: var(--white);
+}
+
+.badge {
+	position: absolute;
+	top: -0%;
+	right: -0%;
+	width: 12px;
+	height: 12px;
+	color: var(--white);
+	border-radius: 100%;
+	background-color: var(--red-300);
+}
+
+@media (prefers-color-scheme: dark) {
+	.controls {
+		display: flex;
+		background-color: var(--dark-300);
+	}
+
+	.control {
+		color: var(--white);
+	}
+
+	.active {
+		border: 1px solid var(--primary-blue);
+		background-color: var(--dark-200);
+	}
+}

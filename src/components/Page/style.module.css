@@ -1,0 +1,35 @@
+.layout {
+  display: grid;
+  grid-template-rows: 8% 92%;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 1rem 1rem 2rem;
+  background-color: var(--tg-theme-secondary-bg-color);
+  height: 100%;
+  max-height: 100%;
+}
+
+.layout:has(.main) {
+  grid-template-rows: 8% 75% 10%;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main button {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow-y: auto;
+}

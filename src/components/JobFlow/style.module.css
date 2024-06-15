@@ -1,0 +1,30 @@
+.actions {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	z-index: 90;
+	bottom: 5%;
+}
+
+.btn {
+	padding: 1rem;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	overflow: hidden;
+	transition: all 800ms ease-in-out;
+}
+
+.container:last-child(article) {
+	pointer-events: none;
+}
+
+.active {
+	pointer-events: all;
+}
