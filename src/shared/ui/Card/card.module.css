@@ -80,22 +80,15 @@
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
-	font-size: 0.938rem;
+	font-size: 1rem;
 }
 
 .body span {
 	text-wrap: nowrap;
 }
 
-.body div {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
 
 .icon {
 	width: 32px;

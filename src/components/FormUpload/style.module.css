@@ -18,7 +18,15 @@
   place-content: center;
   padding: 0.7rem;
   border-radius: 8px;
-  background-color: var(--tg-theme-accent-text-color);
+}
+
+
+.ok {
+	background-color: var(--green-200);
+}
+
+.ok svg {
+	fill: var(--green-500);
 }
 
 .label {
@@ -29,19 +37,29 @@
   align-items: center;
 }
 
+
+
 .label label {
   height: 100%;
 }
 
-.label span  {
+.label span {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  flex-direction: column;
+  text-align: left;
+}
+
+.label label span {
   margin-top: 1rem;
   padding: 0 !important;
   display: flex;
-  
-  flex-direction: column;
+ 
 }
 
-.container input[type="file"] {
+input[type="file"] {
   opacity: 0;
   width: 0;
   height: 0;
@@ -50,9 +68,7 @@
   pointer-events: none;
 }
 
-.container svg {
-  fill: var(--tg-theme-button-text-color);
-}
+
 
 .noCv {
   border: 1px solid var(--red-300);
@@ -60,4 +76,18 @@
 
 .Cv {
   border-radius: var(--green-300);
+}
+
+.loading svg {
+  animation: loader 800s linear 0s 1 forwards;
+}
+
+@keyframes loader {
+  from {
+    fill: rgba(255, 255, 255, 0.393);
+  }
+
+  to {
+    fill: inherit;
+  }
 }

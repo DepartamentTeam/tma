@@ -159,6 +159,28 @@ article {
 	margin: 0;
 }
 
+
+
+.none {
+	background-color: transparent;
+}
+
+.default {
+	background-color: var(--tg-theme-text-color);
+}
+
+.default svg {
+	fill: var(--tg-theme-accent-text-color);
+}
+
+.accent {
+	background-color: var(--tg-theme-accent-text-color);
+}
+
+.accent svg {
+	fill: var(--tg-theme-text-color);
+}
+
 .error {
 	color: var(--red-300);
 	background-color: var(--red-100);
@@ -168,9 +190,6 @@ article {
 	fill: var(--red-300);
 }
 
-.none {
-	background-color: transparent;
-}
 
 .ok {
 	background-color: var(--green-200);

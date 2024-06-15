@@ -23,6 +23,7 @@ export function App() {
 
   const { setUser, store } = useContext(AppContext);
 
+ 
   createEffect(() => {
     const userInfo = async () => {
       try {
@@ -50,6 +51,10 @@ export function App() {
       }
     });
 
+    if (viewport()) {
+      viewport().expand()
+    }
+    
     onCleanup(bindMiniAppCSSVars(miniApp(), themeParams()));
   });
 

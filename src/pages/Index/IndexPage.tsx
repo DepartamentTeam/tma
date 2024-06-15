@@ -11,16 +11,15 @@ import { Input } from "@/shared/ui/Input/Input";
 import { Card } from "../../shared/ui/Card/Card";
 import { TonConnectButton } from "../../app/tonconnect/TonConnectUIButton";
 import { Button } from "@/shared/ui/Button/Button";
+import { UploadFile } from "../../components/FormUpload/Form";
 
 export const IndexPage: Component = () => {
-
-
+  const initData = useInitData();
 
   return (
     <Page
       actions={
         <>
-         
           <A href="/employer" class="btn btn-secondary">
             {" "}
             I am employer
@@ -29,7 +28,6 @@ export const IndexPage: Component = () => {
             {" "}
             I am jobseeker
           </A>
-         
         </>
       }
     >
@@ -80,7 +78,14 @@ export const IndexPage: Component = () => {
             />
           </svg>
         }
-        body={<span>Start to find your dream job</span>}
+        body={
+          <>
+            <span>Start to find your dream job</span>
+            <Show when={initData().user}>
+              <UploadFile id={initData().user.id} />
+            </Show>
+          </>
+        }
       />
     </Page>
   );
